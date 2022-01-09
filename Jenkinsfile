@@ -20,7 +20,7 @@ pipeline {
    	stage('Scan') {
 	    steps {
                 withSonarQubeEnv(installationName: 'sq1') { 
-          #!/bin/bash 'mvn clean sonar:sonar'
+          #!/bin/bash mvn clean sonar:sonar
             }
           }
        }
