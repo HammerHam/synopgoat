@@ -20,7 +20,7 @@ pipeline {
    	stage('Scan') {
 	    steps {
                 withSonarQubeEnv(installationName: 'sq1') { 
-          sh './mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar'
+          sh './mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar'
             }
           }
        }
